@@ -1,0 +1,245 @@
+/* Container to hold the sidebar and content */
+.container {
+    display: flex;
+    width: 100%;
+}
+    #about-me {
+        padding: 20px;
+        background-color: #f9f9f9;
+    }
+
+    .about-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .about-content {
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        max-width: 800px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .about-content ul {
+        list-style-type: disc;
+        padding-left: 20px;
+        margin: 10px 0;
+    }
+
+    .about-content li {
+        margin-bottom: 10px;
+    }
+
+    .about-content p {
+        margin-bottom: 20px;
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    .about-content strong {
+        font-weight: bold;
+    }
+
+    @media (max-width: 768px) {
+        .about-content {
+            padding: 15px;
+        }
+    }
+
+    /* Styling for Sidebar */
+    .side-nav {
+        width: 200px;
+        float: left;
+        padding-right: 20px;
+    }
+
+    .side-nav ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .side-nav ul li {
+        margin: 10px 0;
+    }
+
+    .side-nav ul li a {
+        text-decoration: none;
+        color: #000;
+        font-weight: bold;
+    }
+
+    /* Hide all tabs by default */
+    .tab {
+        display: none;
+    }
+
+    /* Display active tab */
+    .tab.active {
+        display: block;
+    }
+
+    /* General layout */
+    .content {
+        margin-left: 220px;
+    }
+
+    h2 {
+        color: #333;
+    }
+    
+
+/* Sidebar styling */
+.sidebar {
+    width: 250px;
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+    position: sticky; /* Makes the sidebar fixed when scrolling */
+    top: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add this line */
+}
+    .qualification-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 20px; /* Adjust the space between items */
+    }
+
+    .qualification-item {
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        padding: 16px;
+        text-align: center;
+        width: 45%; /* Adjust width for two items per row */
+        box-sizing: border-box;
+    }
+
+    .qualification-item img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 4px;
+    }
+
+    .qualification-item p {
+        margin-top: 10px;
+        font-size: 16px;
+    }
+
+    @media (max-width: 768px) {
+        .qualification-item {
+            width: 100%; /* Stack items on smaller screens */
+        }
+    }
+
+/* Styles for the education table */
+.education-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 16px;
+    text-align: left;
+}
+
+.education-table thead th {
+    background-color: #050505;
+    padding: 10px;
+    font-weight: bold;
+    border-bottom: 2px solid #f7d2d2;
+}
+
+.education-table tbody td {
+    padding: 10px;
+    border-bottom: 1px solid #050505;
+}
+
+.education-table tbody tr:hover {
+    background-color: #f9f9f9; /* Highlight the row when hovering */
+}
+
+/* Styles for the experience table */
+.experience-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 16px;
+    text-align: left;
+}
+
+.experience-table thead th {
+    background-color: #f4f4f4;
+    padding: 10px;
+    font-weight: bold;
+    border-bottom: 2px solid #ddd;
+}
+
+.experience-table tbody td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.experience-table tbody tr:hover {
+    background-color: #f9f9f9; /* Highlight the row when hovering */
+}
+
+/* Photo styling */
+.photo img {
+    width: 150px; /* Adjust the size of the image */
+    height: auto;
+    border-radius: 80%; /* Makes the image circular */
+    margin-bottom: 40px;
+}
+
+/* Sidebar navigation */
+.side-nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.side-nav li {
+    margin: 15px 0;
+}
+
+.side-nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.side-nav a:hover {
+    color: #f0a500;
+}
+
+/* Main content styling */
+.content {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+h1 {
+    color: #333;
+}
+
+section {
+    padding: 20px 0;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+/* Hide Tabs by Default */
+.tab {
+    display: none;
+}
+
+/* Active Tab Content */
+.tab.active {
+    display: block;
+}
